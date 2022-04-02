@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> <a href="index.html">Home</a>
+    <h1>SingUp</h1>
+    <form>
+     <input type="email" placeholder="eneter email" id="email" value ="">
+     <input type="number text" placeholder="eneter password" id="pass" value ="">
+     <input type="text" placeholder="eneter username" id="name" value ="">
+     <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",subFun)
+    // var userData=[];
+
+    var userData=JSON.parse(localStorage.getItem("userCreds")) || [];
+    function subFun(){
+        event.preventDefault();
+        var obj={
+            name:document.querySelector("#name").value,
+            password:document.querySelector("#pass").value,
+            email:document.querySelector("#email").value,
+        }
+    //    console.log(obj);
+     userData.push(obj);
+
+    //  console.log(userData);
+
+    localStorage.setItem("userCreds",JSON.stringify(userData))
+
+    }
+</script>

@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Roboto, Arial, Helvetica, sans-serif; ;
+    
+    
+}
+body{
+    background-color: snow;
+}
+
+ .navbar{
+    display: flex;
+    margin-top: 10px;
+    width: 90%;
+    justify-content: center;
+    /* padding:  10px 10vw; */
+    margin: auto;
+    justify-content: space-between;
+} 
+
+.navbar .medium{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+.medium .img{
+       height: 40px;
+}
+
+.navbar .last{
+    width: 300px;
+    
+    display: flex;
+     justify-content:space-between;
+     /* margin-top: 15px; */
+    align-items: center;
+  
+}
+
+.last .box{
+    width: 80px;
+    height: 25px;
+    background-color: steelblue;
+    color: #ffffff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+   
+}  
+    .box a{
+          text-decoration: none;
+         color: #ffffff;
+    }
+    
+
+  
+    
+
+.last .box1{
+    width: 80px;
+    height: 25px;
+    background-color: dimgray;
+    color: #ffffff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+   
+    
+    
+}
+.last .line{
+    border: 1px  solid ;
+    height: 30px;
+
+}
+.landing{
+     display: flex;
+    background-color: mediumseagreen;
+   
+ 
+     
+ 
+    
+
+ 
+}
+.lpage{
+    display: flex;
+    /* border: 1px solid red; */
+  
+  
+   color: snow;
+   width:90%;
+   
+   justify-content: space-between;
+   font-size: 20px;
+   align-items: center;
+   height: 50px;
+   margin-left: 92px;
+
+}
+.img{
+    display: flex;
+}
+.slider{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 62%;
+    height: 428px;
+    margin-left: 100px;
+  
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    background: url(https://www.kindmeal.my/photos/deal/5/565-4023-m.jpg);
+   animation: slide1 10s infinite;
+}
+@keyframes slide1{
+   10%{
+        background: url(https://www.kindmeal.my/photos/deal/5/565-4023-m.jpg); 
+        
+    }
+    22%{
+        background: url(https://www.kindmeal.my/photos/deal/4/498-2202-m.jpg); 
+    }
+    30%{
+        background: url(https://www.kindmeal.my/photos/deal/6/686-4475-m.jpg); 
+    }
+    40%{
+        background: url(https://www.kindmeal.my/photos/deal/5/579-4524-m.jpg); 
+    }
+    50%{
+        background: url(https://www.kindmeal.my/photos/deal/6/634-3683-m.jpg); 
+    }
+    60%{
+        background: url(https://www.kindmeal.my/photos/deal/6/628-4921-m.jpg); 
+    }
+    100%{
+        background: url(https://www.kindmeal.my/photos/deal/6/670-4180-m.jpg); 
+    }
+
+    
+}
+
+.slider2{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 25%;
+    height: 428px;
+   
+    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    background: url(https://www.kindmeal.my/photos/shop/5/567-4252-m.jpg);
+   animation: slide2 20s infinite;
+}
+@keyframes slide2{
+   10% {
+        background: url(https://www.kindmeal.my/photos/shop/5/567-4252-m.jpg);
+    }
+    20%{
+        background: url(https://www.kindmeal.my/photos/shop/1/149-351-m.jpg);
+    }
+    30%{
+        background: url(https://www.kindmeal.my/photos/shop/3/326-1891-m.jpg);
+    }
+    40%{
+        background: url(https://www.kindmeal.my/photos/shop/4/459-2975-m.jpg);
+    }
+    60%{
+        background: url(https://www.kindmeal.my/photos/shop/3/393-2495-m.jpg);
+    }
+    70%{
+        background: url(https://www.kindmeal.my/photos/shop/5/553-4115-m.jpg);
+    }
+    80%{
+        background: url(https://www.kindmeal.my/photos/shop/3/393-2495-m.jpg);
+    }
+   
+}
+.kumar{
+  
+    margin-left: 180px;
+    width:90%;
+    height: 430px;
+    margin: auto;
+    box-sizing: border-box;
+    
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.kumar1{
+    display: flex;
+    width: 95%;
+    margin-top: 25px;
+    /* width: 800px; */
+    justify-content: space-between;
+    font-size: 20px;
+    color: #2184ff;
+    cursor: pointer;
+    font-weight: 400;
+    padding-top: 40px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin:  25px auto;
+    
+}
+.kumar2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    
+    
+}
+.image{
+
+    height: 290px;
+    width: 280px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+
+}
+.page{
+    width: 200px;
+    font-size: 15px;
+    color: darkgray;
+    margin: auto;
+  
+}  
+.middlePage{
+   background-color: white; 
+   height: 1350px;
+   margin-top: 30px;
+   text-align: center;
+   padding-top: 50px;
+   
+}  
+.pageA{
+    display: flex;
+    width: 95%;
+ 
+    margin: 50px auto;
+    justify-content: space-around;
+}
+.pageAb{
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 250px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 50px;
+    font-weight: 400;
+    color: lightslategray;
+    border-radius: 5px;
+    
+    
+}
+.btn{
+    width: 500px;
+    height: 120px;
+    background-color: crimson;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 30px;
+}
+.featured{
+    margin-top: 80px;
+    
+
+}
+.featuredown{
+     margin-top: 50px;
+     padding-top: 50px;
+     
+}
+
+.footer{
+   width: 100%;
+   background-color:  mediumseagreen ;
+   padding: 20px;
+   
+}
+
+.footer1{
+    display: flex;
+    /* width: 95%; */
+    justify-content: space-evenly;
+    background-color: mediumseagreen;
+    color: white ;
+    padding-top: 30px;
+    height: 490px;
+    font-size: 20px;
+    text-align: left;
+    
+    
+}
+.footer2{
+    font-size: 15px;
+    cursor: pointer;
+    color: gainsboro;
+}
+
+
+
+

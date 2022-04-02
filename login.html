@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> <a href="index.html">Home</a>    </h2>
+    <h1>Login</h1>
+    
+
+    <form>
+        <input type="email" placeholder="eneter email" id="email" value ="">
+        <input type="number text" placeholder="eneter password" id="pass" value ="">
+      
+        <input type="submit" value="submit">
+       </form>
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("submit",logIN)
+     var regUser=JSON.parse(localStorage.getItem("userCreds"));
+     console.log(regUser);
+     
+
+     function logIN(){
+         event.preventDefault();
+
+         var enterEmail=document.querySelector("#email").value;
+         var enterPass=document.querySelector("#pass").value;
+
+         for(var i=0; i<regUser.length; i++)
+         {
+             if(regUser[i].email== enterEmail && regUser[i].password== enterPass )
+             {
+                console.log("login success");
+                alert("log in succesful");
+                window.location.href="mens.html";
+                break;
+             }
+             else
+             {
+                 console.log("log in failed");
+             }
+         }
+     }
+</script>
